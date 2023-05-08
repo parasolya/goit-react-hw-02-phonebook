@@ -10,7 +10,7 @@ ul {
   border: 1px solid hsl(0, 0%, 27%);
   border-top: 1.5px solid hsl(0, 0%, 27%);
   
-  box-shadow: 10px 5px 5px rgb(244, 251, 206);
+  box-shadow: 10px 5px 5px rgb(249, 248, 158);
  
   padding-left: 10px;
   margin-right: 40px;
@@ -25,7 +25,8 @@ ul {
 }
 
 .phonebook__section {
-    background-color: #d3bafc; 
+    color: #fcfcfc;
+    background-color: #333334; 
     width: 500px;
     margin: 40px;
     /* flex: auto; */
@@ -33,7 +34,7 @@ ul {
     border: 1px solid hsl(0, 0%, 27%);
     border-top: 1.5px solid hsl(0, 0%, 27%);
     padding: 10px 0px;
-    box-shadow: 10px 5px 5px rgb(244, 251, 206);
+    box-shadow: 10px 5px 5px rgb(249, 248, 158);
     gap: 20px;
     padding-left: 10px;
   }
@@ -50,7 +51,7 @@ ul {
   border: 1px solid hsl(0, 0%, 27%);
   border-top: 1.5px solid hsl(0, 0%, 27%);
   
-  box-shadow: 10px 5px 5px rgb(214, 174, 174);
+  box-shadow: 10px 5px 5px rgb(249, 248, 158);
  
   padding-left: 10px;
   margin-right: 20px;
