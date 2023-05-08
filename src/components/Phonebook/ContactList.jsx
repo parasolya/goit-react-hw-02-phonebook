@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './Phonebook.module.css';
 
 const ContactList = ({ contacts, onDelete }) => {
    
@@ -8,11 +9,11 @@ const ContactList = ({ contacts, onDelete }) => {
         {contacts.map(el => {
           
           return (
-              <li key={el.id}>
+              <li className={css.contacts__item} key={el.id}>
             <p>
               {el.name}: <span>{el.number}</span>
             </p>
-            <button onClick={() => onDelete(el.id)}>delete</button>
+            <button className={css.contacts__btn} onClick={() => onDelete(el.id)}>delete</button>
             </li>
           );
         })}

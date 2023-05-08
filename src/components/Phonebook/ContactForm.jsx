@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import css from './Phonebook.module.css';
 
 class ContactForm extends Component {
   
@@ -29,7 +30,7 @@ class ContactForm extends Component {
 render() {
   return (
     <div>
-        <form onSubmit={this.handleContactAdd}>
+        <form className={css.phonebook__form}  onSubmit={this.handleContactAdd}>
         <label>Name
            <input
   type="text"
@@ -50,7 +51,7 @@ render() {
   value={this.state.number} 
   onChange={(e) => {this.handleInputChange(e)}}/>
 </label>
-<button type="submit">Submit</button>
+<button className={css.submit__btn} type="submit">Submit</button>
 </form>
 
     </div>

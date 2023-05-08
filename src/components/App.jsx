@@ -4,6 +4,7 @@ import ContactForm from './Phonebook/ContactForm';
 import { nanoid } from 'nanoid';
 import Filter from './Phonebook/Filter';
 import ContactList from './Phonebook/ContactList';
+import css from '././Phonebook/Phonebook.module.css';
 
 class App extends Component {
   state = {
@@ -56,7 +57,7 @@ class App extends Component {
     const { filter, contacts } = this.state;
 
     return (
-      <div>
+      <div className={css.phonebook__section}>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.formSubmitHandler} />
 
